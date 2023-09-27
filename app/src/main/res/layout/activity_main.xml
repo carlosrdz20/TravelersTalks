@@ -6,13 +6,104 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@color/TT_Barra">
+
+        <EditText
+            android:id="@+id/textoSearch"
+            android:layout_width="181dp"
+            android:layout_height="50dp"
+            android:background="@color/TT_Barra"
+            android:hint="Search ..."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toStartOf="@+id/textoFilters"
+            app:layout_constraintStart_toStartOf="parent"></EditText>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/TT_Barra"
+            android:src="@drawable/ic_search" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/TT_Barra"
+            android:rotation="90"
+            android:scaleX="6"
+            android:src="@drawable/ic_barrita" />
+
+        <TextView
+            android:id="@+id/textoFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/TT_Barra"
+            android:text="Filters"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textoSearch"></TextView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/TT_Barra"
+            android:src="@drawable/ic_flecha_barra" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/TT_Barra"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textoFollowing"
+            android:layout_width="173dp"
+            android:layout_height="50dp"
+            android:background="@color/TT_Barra"
+            android:hint="Following"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toStartOf="@+id/textoFilters"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <Button
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/TT_Action"
+            app:cornerRadius="200dp">
+        </Button>
+
+        <TextView
+            android:id="@+id/textoForYou"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:background="@color/TT_Barra"
+            android:text="For You"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textoSearch"></TextView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

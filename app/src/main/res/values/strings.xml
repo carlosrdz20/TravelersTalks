@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Travelers Talks</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_myposts">My Posts</string>
+    <string name="menu_logout">Log Out</string>
+    <string name="barra_search">Search</string>
 </resources>
